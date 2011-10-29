@@ -23,9 +23,9 @@ class ConwaysGroovyLife {
     Integer countNeighbors(Grid grid, Integer ofX, Integer ofY) {
         ((ofX - 1)..(ofX + 1)).inject(0) {ic, i ->
             ((ofY - 1)..(ofY + 1)).inject(ic) {jc, j ->
-                if (!(i == ofX && j == ofY) ||
-                        i > 0 || j > 0 || i <= grid.rowCount || j <= grid.columnCount) {
-                    jc++
+                if (!(i == ofX && j == ofY) &&
+                        (i > 0 || j > 0 || i <= grid.rowCount || j <= grid.columnCount)) {
+                    if(grid.get(i, j)) jc++
                 }
                 return jc
             }

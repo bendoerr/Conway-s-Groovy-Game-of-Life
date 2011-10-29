@@ -1,4 +1,4 @@
-@groovy.lang.Grab(group='com.google.guava', module='guava', version='10.0.1')
+@groovy.lang.Grab(group = 'com.google.guava', module = 'guava', version = '10.0.1')
 import com.google.common.collect.Table
 import com.google.common.collect.ArrayTable
 
@@ -30,8 +30,8 @@ class Grid {
     }
 
     Object each(Closure c) {
-        table.rowKeyList().each {x ->
-            table.columnKeyList().each {y ->
+        table.columnKeyList().each {y ->
+            table.rowKeyList().each {x ->
                 c(x, y, table.get(x, y))
             }
         }

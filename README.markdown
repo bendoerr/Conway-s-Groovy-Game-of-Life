@@ -1,7 +1,7 @@
 Conway's Game of Life
 ====
 
-[Wikipedia][http://en.wikipedia.org/wiki/Conway's_Game_of_Life]
+[Wikipedia](http://en.wikipedia.org/wiki/Conway's_Game_of_Life)
 
 Written in Groovy
 ----
@@ -19,5 +19,5 @@ I was feeling board one day and I always liked the emergent behavior that comes 
 
     groovy GroovyLifeGUI.groovy
 
- * Place the initial cells, then click cycle and continue to click cycle to see the result of the rules being applied to the current state.
+Place the initial cells, then click cycle and continue to click cycle to see the result of the rules being applied to the current state.
 
